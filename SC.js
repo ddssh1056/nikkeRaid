@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Nikke Raid Data Processor (JSON v2.62 - Level Data Separated)
+// @name         Nikke Raid Data Processor (JSON v2.7 - Level Data Separated)
 // @namespace    http://tampermonkey.net/
-// @version      2.62
+// @version      2.7
 // @description  레이드 기록, 멤버 리스트, 그리고 검증용 스쿼드 레벨 데이터를 각각 별도의 3개 CSV 파일로 추출합니다.
 // @author       You
 // @match        *://*.blablalink.com/*
