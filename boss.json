@@ -9,7 +9,7 @@
         316074837300
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Laitance.webp"
     },
     {
       "step": 2,
@@ -20,7 +20,7 @@
         316074837300
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Stout.webp"
     },
     {
       "step": 3,
@@ -31,7 +31,7 @@
         431215630200
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Material_H.webp"
     },
     {
       "step": 4,
@@ -42,7 +42,7 @@
         316074837300
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Rebuild_Spook.webp"
     },
     {
       "step": 5,
@@ -53,7 +53,7 @@
         431215630200
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Chatterbox.webp"
     }
   ],
   "32": [
@@ -66,7 +66,7 @@
         316074837300
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Thermite_%CE%B2.webp"
     },
     {
       "step": 2,
@@ -77,7 +77,7 @@
         316074837300
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Crystal_Armor.webp"
     },
     {
       "step": 3,
@@ -88,7 +88,7 @@
         431215630200
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Nihilister_Boss.webp"
     },
     {
       "step": 4,
@@ -99,7 +99,7 @@
         316074837300
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Rebuild_Obelisk.webp"
     },
     {
       "step": 5,
@@ -110,7 +110,7 @@
         431215630200
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Modernia_%28A.N.M.I.%29.webp"
     }
   ],
   "33": [
@@ -123,7 +123,7 @@
         316074837300
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Mace.webp"
     },
     {
       "step": 2,
@@ -134,7 +134,7 @@
         316074837300
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Heavy_Metal.webp"
     },
     {
       "step": 3,
@@ -145,7 +145,7 @@
         431215630200
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Harvester.webp"
     },
     {
       "step": 4,
@@ -156,7 +156,7 @@
         316074837300
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Rebuild_Vulcan_R.webp"
     },
     {
       "step": 5,
@@ -167,7 +167,7 @@
         431215630200
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Ultra.webp"
     }
   ],
   "34": [
@@ -180,7 +180,7 @@
         316074837300
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Replica_Red_Shoes.webp"
     },
     {
       "step": 2,
@@ -191,7 +191,7 @@
         316074837300
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_RunWay.webp"
     },
     {
       "step": 3,
@@ -202,7 +202,7 @@
         431215630200
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Chatterbox.webp"
     },
     {
       "step": 4,
@@ -213,7 +213,7 @@
         316074837300
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Rebuild_Cucumber.webp"
     },
     {
       "step": 5,
@@ -224,20 +224,26 @@
         431215630200
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Alteisen_MK.VI_%28P.S.I.D.%29.webp"
     }
   ],
   "35": [
     {
       "step": 1,
-      "name": "듀얼링",
+      "name": "듀얼 링",
       "hp": [
         99856279200,
         249640698000,
         542085993750
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Dual_Ring.webp",
+      "bossIds": [
+        "2420020214",
+        "2420020714"
+      ],
+      "iconId": "ecg002",
+      "elementId": "100001"
     },
     {
       "step": 2,
@@ -248,7 +254,13 @@
         542085993750
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Spread.webp",
+      "bossIds": [
+        "2420060124",
+        "2420060724"
+      ],
+      "iconId": "ecg006",
+      "elementId": "200001"
     },
     {
       "step": 3,
@@ -259,7 +271,13 @@
         726335435500
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Storm_Bringer_%28Z.E.U.S.%29.webp",
+      "bossIds": [
+        "2510010144",
+        "2510010744"
+      ],
+      "iconId": "eba001",
+      "elementId": "400001"
     },
     {
       "step": 4,
@@ -270,18 +288,30 @@
         542085993750
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Rebuild_Fingers.webp",
+      "bossIds": [
+        "3411030134",
+        "3411030734"
+      ],
+      "iconId": "mca003_re",
+      "elementId": "300001"
     },
     {
       "step": 5,
-      "name": "마테리얼 H",
+      "name": "마테리얼H",
       "hp": [
         150841813600,
         377104534000,
         726335435500
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Material_H_%28D.M.T.R.%29.webp",
+      "bossIds": [
+        "2520120144",
+        "2520120744"
+      ],
+      "iconId": "ebg002_dmtr",
+      "elementId": "500001"
     }
   ],
   "36": [
@@ -294,7 +324,13 @@
         542085993750
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Doctor.webp",
+      "bossIds": [
+        "3420050224",
+        "3420050724"
+      ],
+      "iconId": "mcg005",
+      "elementId": "200001"
     },
     {
       "step": 2,
@@ -305,7 +341,13 @@
         542085993750
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Heavy_Metal.webp",
+      "bossIds": [
+        "3420060114",
+        "3420060714"
+      ],
+      "iconId": "mcg006",
+      "elementId": "100001"
     },
     {
       "step": 3,
@@ -316,7 +358,13 @@
         726335435500
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Kraken_%28D.M.T.R.%29.webp",
+      "bossIds": [
+        "1520040154",
+        "1520040754"
+      ],
+      "iconId": "bbg004_dmtr_intercept",
+      "elementId": "500001"
     },
     {
       "step": 4,
@@ -327,7 +375,13 @@
         542085993750
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Rebuild_Obelisk.webp",
+      "bossIds": [
+        "2411010144",
+        "2411010741"
+      ],
+      "iconId": "eca001_re",
+      "elementId": "400001"
     },
     {
       "step": 5,
@@ -338,7 +392,13 @@
         726335435500
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Modernia_%28A.N.M.I.%29.webp",
+      "bossIds": [
+        "3520040134",
+        "3520040734"
+      ],
+      "iconId": "mbg004_anmi",
+      "elementId": "300001"
     }
   ],
   "37": [
@@ -351,7 +411,13 @@
         542085993750
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Laitance.webp",
+      "bossIds": [
+        "1420020134",
+        "1420020734"
+      ],
+      "iconId": "bcg002",
+      "elementId": "300001"
     },
     {
       "step": 2,
@@ -362,7 +428,13 @@
         542085993750
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Fingers.webp",
+      "bossIds": [
+        "3410030154",
+        "3410030754"
+      ],
+      "iconId": "mca003",
+      "elementId": "500001"
     },
     {
       "step": 3,
@@ -373,7 +445,13 @@
         726335435500
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Grave_Digger.webp",
+      "bossIds": [
+        "3520020144",
+        "3520020744"
+      ],
+      "iconId": "mbg002",
+      "elementId": "400001"
     },
     {
       "step": 4,
@@ -384,7 +462,13 @@
         542085993750
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Rebuild_Stout.webp",
+      "bossIds": [
+        "2421050124",
+        "2421050724"
+      ],
+      "iconId": "ecg005_re",
+      "elementId": "200001"
     },
     {
       "step": 5,
@@ -395,7 +479,13 @@
         726335435500
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Black_Smith.webp",
+      "bossIds": [
+        "1520030114",
+        "1520030714"
+      ],
+      "iconId": "bbg003",
+      "elementId": "100001"
     }
   ],
   "38": [
@@ -408,7 +498,13 @@
         542085993750
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Porter.webp",
+      "bossIds": [
+        "1420030144",
+        "1420030744"
+      ],
+      "iconId": "bcg003",
+      "elementId": "400001"
     },
     {
       "step": 2,
@@ -419,7 +515,13 @@
         542085993750
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Plate.webp",
+      "bossIds": [
+        "2410030214",
+        "2410030714"
+      ],
+      "iconId": "eca003",
+      "elementId": "100001"
     },
     {
       "step": 3,
@@ -430,7 +532,13 @@
         726335435500
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Land_Eater.webp",
+      "bossIds": [
+        "2520010124",
+        "2520010724"
+      ],
+      "iconId": "ebg001",
+      "elementId": "200001"
     },
     {
       "step": 4,
@@ -441,7 +549,13 @@
         542085993750
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Rebuild_Fingers.webp",
+      "bossIds": [
+        "3411030134",
+        "3411030734"
+      ],
+      "iconId": "mca003_re",
+      "elementId": "300001"
     },
     {
       "step": 5,
@@ -452,7 +566,13 @@
         726335435500
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Material_H_%28D.M.T.R.%29.webp",
+      "bossIds": [
+        "2520120144",
+        "2520120744"
+      ],
+      "iconId": "ebg002_dmtr",
+      "elementId": "500001"
     }
   ],
   "39": [
@@ -465,7 +585,13 @@
         542085993750
       ],
       "weak": "수냉",
-      "img": ""
+      "img": "Enemy_Spread.webp",
+      "bossIds": [
+        "2420060114",
+        "2420060714"
+      ],
+      "iconId": "ecg006",
+      "elementId": "100001"
     },
     {
       "step": 2,
@@ -476,7 +602,13 @@
         542085993750
       ],
       "weak": "전격",
-      "img": ""
+      "img": "Enemy_Crystal_Armor.webp",
+      "bossIds": [
+        "4420020124",
+        "4420020724"
+      ],
+      "iconId": "xcg002",
+      "elementId": "200001"
     },
     {
       "step": 3,
@@ -487,7 +619,13 @@
         726335435500
       ],
       "weak": "풍압",
-      "img": ""
+      "img": "Enemy_Kraken_%28D.M.T.R.%29.webp",
+      "bossIds": [
+        "1520040154",
+        "1520040754"
+      ],
+      "iconId": "bbg004_dmtr_intercept",
+      "elementId": "500001"
     },
     {
       "step": 4,
@@ -498,7 +636,13 @@
         542085993750
       ],
       "weak": "작열",
-      "img": ""
+      "img": "Enemy_Rebuild_Cucumber.webp",
+      "bossIds": [
+        "1421010134",
+        "1421010734"
+      ],
+      "iconId": "bcg001_re",
+      "elementId": "300001"
     },
     {
       "step": 5,
@@ -509,7 +653,13 @@
         726335435500
       ],
       "weak": "철갑",
-      "img": ""
+      "img": "Enemy_Storm_Bringer_%28Z.E.U.S.%29.webp",
+      "bossIds": [
+        "2510010144",
+        "2510010744"
+      ],
+      "iconId": "eba001",
+      "elementId": "400001"
     }
   ],
   "40": [
@@ -522,7 +672,13 @@
         542085993750
       ],
       "weak": "풍압",
-      "img": "Enemy_Mace.webp"
+      "img": "Enemy_Mace.webp",
+      "bossIds": [
+        "1410020154",
+        "1410020754"
+      ],
+      "iconId": "bca002",
+      "elementId": "500001"
     },
     {
       "step": 2,
@@ -533,7 +689,13 @@
         542085993750
       ],
       "weak": "수냉",
-      "img": "Enemy_Heavy_Metal.webp"
+      "img": "Enemy_Heavy_Metal.webp",
+      "bossIds": [
+        "3420060114",
+        "3420060714"
+      ],
+      "iconId": "mcg006",
+      "elementId": "100001"
     },
     {
       "step": 3,
@@ -544,7 +706,13 @@
         726335435500
       ],
       "weak": "작열",
-      "img": "Enemy_Modernia_%28A.N.M.I.%29.webp"
+      "img": "Enemy_Modernia_%28A.N.M.I.%29.webp",
+      "bossIds": [
+        "3520040134",
+        "3520040734"
+      ],
+      "iconId": "mbg004_anmi",
+      "elementId": "300001"
     },
     {
       "step": 4,
@@ -555,7 +723,13 @@
         542085993750
       ],
       "weak": "철갑",
-      "img": "Enemy_Rebuild_Vulcan_R.webp"
+      "img": "Enemy_Rebuild_Vulcan_R.webp",
+      "bossIds": [
+        "3421040144",
+        "3421040744"
+      ],
+      "iconId": "mcg004_re",
+      "elementId": "400001"
     },
     {
       "step": 5,
@@ -566,7 +740,13 @@
         726335435500
       ],
       "weak": "전격",
-      "img": "Enemy_Alteisen_MK.VI_%28P.S.I.D.%29.webp"
+      "img": "Enemy_Alteisen_MK.VI_%28P.S.I.D.%29.webp",
+      "bossIds": [
+        "3520010124",
+        "3520010724"
+      ],
+      "iconId": "mbg001_psid",
+      "elementId": "200001"
     }
   ],
   "41": [
