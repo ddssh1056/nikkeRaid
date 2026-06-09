@@ -752,58 +752,63 @@
   "41": [
     {
       "step": 1,
-      "name": "",
+      "name": "시니스터",
       "hp": [
-        0,
-        0,
-        0
+        99856279200,
+        249640698000,
+        542085993750
       ],
-      "weak": "",
-      "img": ""
+      "weak": "작열",
+      "img": "Enemy_Sinister.webp",
+      "elementId": "300001"
     },
     {
       "step": 2,
-      "name": "",
+      "name": "레플리카 레드 슈즈",
       "hp": [
-        0,
-        0,
-        0
+        99856279200,
+        249640698000,
+        542085993750
       ],
-      "weak": "",
-      "img": ""
+      "weak": "풍압",
+      "img": "Enemy_Replica_Red_Shoes.webp",
+      "elementId": "500001"
     },
     {
       "step": 3,
-      "name": "",
+      "name": "니힐리스타",
       "hp": [
-        0,
-        0,
-        0
+        150841813600,
+        377104534000,
+        726335435500
       ],
-      "weak": "",
-      "img": ""
+      "weak": "수냉",
+      "img": "Enemy_Nihilister_Boss.webp",
+      "elementId": "100001"
     },
     {
       "step": 4,
-      "name": "",
+      "name": "리빌드 빅 토르소",
       "hp": [
-        0,
-        0,
-        0
+        99856279200,
+        249640698000,
+        542085993750
       ],
-      "weak": "",
-      "img": ""
+      "weak": "전격",
+      "img": "Enemy_Rebuild_Stout.webp",
+      "elementId": "200001"
     },
     {
       "step": 5,
-      "name": "",
+      "name": "울트라",
       "hp": [
-        0,
-        0,
-        0
+        150841813600,
+        377104534000,
+        726335435500
       ],
-      "weak": "",
-      "img": ""
+      "weak": "철갑",
+      "img": "Enemy_Ultra.webp",
+      "elementId": "400001"
     }
   ],
   "42": [
