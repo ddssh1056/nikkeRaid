@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nikke Union Raid -> Google Sheet Sync
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  blablalink 유니온 레이드(유레) 데이터를 5분마다 자동 수집해 Google Apps Script 웹앱으로 전송. 캐릭터 매핑은 라이브 캡처 → CDN → GitHub → CharMap 계층형 폴백.
 // @author       You
 // @match        *://*.blablalink.com/*
@@ -31,8 +31,8 @@
     // 길드/지역 식별자 — 각 길드가 자기 값으로 채워야 함(배포 가이드 참고).
     //  찾는 법: blablalink 유니온 레이드 페이지에서 F12 → Network → GetUnionRaidDataOfGuildSeason 요청의
     //          Payload(요청 본문)에 있는 area_id / guild_id 를 그대로 복사.
-    var AREA_ID = 83;                       // (보통 83. 다르면 위 방법으로 확인)
-    var GUILD_ID = 'PASTE_YOUR_GUILD_ID_HERE';   // 반드시 본인 길드 값으로
+    var AREA_ID = 83;    // (한국서버 83. 한섭 아니면 수정해야함 일본서버 81 북미서버 82 글로벌 서버 84 동남아 서버 85)
+    var GUILD_ID = 'PASTE_YOUR_GUILD_ID_HERE';   // 반드시 본인 길드 ID (이름 옆에 숫자로 된거)로
 
     // 시즌 자동 탐색: START부터 위로 올라가며, 데이터 없는(또는 호출 실패) 첫 시즌에서 즉시 멈춤.
     // → 새 시즌(41차…)이 열리면 자동 포함. 보통 손댈 필요 없음.
@@ -56,6 +56,7 @@
 
     // 레이드 API
     var API_URL = 'https://api.blablalink.com/api/game/proxy/Game/GetUnionRaidDataOfGuildSeason';
+    var GUILD_MEMBERS_URL = 'https://api.blablalink.com/api/game/proxy/Game/GetGuildMembers';
     var X_COMMON_PARAMS = '{"game_id":"16","area_id":"global","source":"pc_web","intl_game_id":"29080","language":"ko","env":"prod","data_statistics_scene":"outer","data_statistics_page_id":"https://www.blablalink.com/shiftyspad","data_statistics_client_type":"pc_web","data_statistics_lang":"ko"}';
 
     // ==================================================================================
@@ -268,6 +269,31 @@
             body: JSON.stringify({ area_id: AREA_ID, guild_id: GUILD_ID, season_id: String(seasonId) })
         }).then(function (r) { return r.json(); });
     }
+    function guildMembersCount(json) {
+        var items = (json && json.data && json.data.items) || (json && json.items) || [];
+        return Array.isArray(items) ? items.length : 0;
+    }
+    function fetchGuildMembers() {
+        return originalFetch(GUILD_MEMBERS_URL, {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'content-type': 'application/json',
+                'x-channel-type': '2',
+                'x-language': 'ko',
+                'x-common-params': X_COMMON_PARAMS
+            },
+            body: JSON.stringify({ guild_id: GUILD_ID, nikke_area_id: AREA_ID })
+        }).then(function (r) { return r.json(); }).then(function (json) {
+            var n = guildMembersCount(json);
+            if (n) console.log('[유레싱크] 현재 길드원 ' + n + '명');
+            else console.warn('[유레싱크] 현재 길드원 목록이 비어 있습니다.');
+            return json;
+        }).catch(function (e) {
+            console.warn('[유레싱크] GetGuildMembers 호출 실패(레이드 기록 전송은 계속)', e);
+            return null;
+        });
+    }
 
     // 시즌 자동 탐색 (ban 방지: 평소엔 '없는 시즌'을 요청하지 않음)
     //  - knownMax(마지막으로 데이터가 있던 시즌)까지만 매 주기 수집.
@@ -329,16 +355,20 @@
             var mapSize = Object.keys(nameMap).length;
             if (!mapSize) console.warn('[유레싱크] 캐릭터 매핑을 못 구했습니다(이름이 Unknown으로 들어갈 수 있음).');
 
-            return collectAllSeasons(nameMap, c).then(function (all) {
-                if (!all.length) {
+            return Promise.all([collectAllSeasons(nameMap, c), fetchGuildMembers()]).then(function (pair) {
+                var all = pair[0] || [];
+                var guildMembers = pair[1] || null;
+                if (!all.length && !guildMembersCount(guildMembers)) {
                     console.warn('[유레싱크] 보낼 데이터가 없습니다(로그인/길드/시즌 확인).');
                     return;
                 }
                 var payload = { records: all, charMap: nameMap };
+                if (guildMembers) payload.guildMembers = guildMembers;
                 if (SECRET) payload.secret = SECRET;
                 return gmPostJson(GAS_URL, JSON.stringify(payload)).then(function (res) {
                     if (res && res.ok) {
                         console.log('[유레싱크] 전송 ' + all.length + ' → 추가 ' + res.added + ', 중복 ' + res.skipped);
+                        if (res.roster && res.roster.ok) console.log('[유레싱크] LastRoster ' + res.roster.count + '명' + (res.roster.changed ? ' 갱신' : ' 유지'));
                         if (res._t) console.log('[유레싱크] GAS 처리 상세', res._t);
                     } else {
                         console.error('[유레싱크] GAS 응답 오류', res);
