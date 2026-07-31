@@ -644,5 +644,67 @@
       "img": "Enemy_Kraken_%28D.M.T.R.%29.webp",
       "elementId": "500001"
     }
+  ],
+  "43": [
+    {
+      "step": 1,
+      "name": "선바스",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "전격",
+      "img": "Enemy_Sunbather.webp",
+      "elementId": "200001"
+    },
+    {
+      "step": 2,
+      "name": "플레이트",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "작열",
+      "img": "Enemy_Plate.webp",
+      "elementId": "300001"
+    },
+    {
+      "step": 3,
+      "name": "토커티브",
+      "hp": [
+        150841813600,
+        377104534000,
+        726335435500
+      ],
+      "weak": "수냉",
+      "img": "Enemy_Chatterbox.webp",
+      "elementId": "100001"
+    },
+    {
+      "step": 4,
+      "name": "리빌드 핑거즈",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "풍압",
+      "img": "Enemy_Rebuild_Fingers.webp",
+      "elementId": "500001"
+    },
+    {
+      "step": 5,
+      "name": "마테리얼H",
+      "hp": [
+        150841813600,
+        377104534000,
+        726335435500
+      ],
+      "weak": "철갑",
+      "img": "Enemy_Material_H_%28D.M.T.R.%29.webp",
+      "elementId": "400001"
+    }
   ]
 }
