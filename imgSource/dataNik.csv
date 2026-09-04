@@ -1,6 +1,6 @@
 버스트,코드,이름,영문명,파일명,줄임말
 1,풍압,리틀 머메이드,Little Mermaid,c513,세
-1,전격,아니스 : 스타,Anis: Star,c017,돌
+1,전격,아니스 : 스타,Anis: Star,c017,돌|별|돌니스|별니스
 1,전격,아비스타,Avistar,c441,아비
 1,전격,루주,Rouge,c272,루
 1,전격,목단,Moran,c281,목
@@ -11,7 +11,7 @@
 1,수냉,토브,Tove,c192,토
 1,작열,엠마 : 택티컬 업,Emma: Tactical Upgrade,c093,택엠
 1,철갑,쿠루미,Kurumi,c862,쿠루미
-1,수냉,솔린 : 프로스트 티켓,Soline: Frost Ticket,c074,클솔
+1,수냉,솔린 : 프로스트 티켓,Soline: Frost Ticket,c074,솔
 1,전격,클레어,Claire,c842,클레어
 1,풍압,볼륨,Volume,c431,볼
 1,풍압,소라,Sora,c532,소라
@@ -53,25 +53,25 @@
 1,수냉,iDoll 오션,iDoll Ocean,c305,iDoll 오션
 1,풍압,iDoll 플라워,iDoll Flower,c304,iDoll 플라워
 1,철갑,미사토,Misato,c833,미사
-2,작열,아르카나 : 포츈 메이트,Arcana: Fortune Mate,c583,교카나
+2,작열,아르카나 : 포츈 메이트,Arcana: Fortune Mate,c583,교카나|교복
 2,수냉,백학,Snow Crane,c620,백학
 2,철갑,크라운,Crown,c330,크
-2,풍압,나유타,Nayuta,c223,나유
+2,풍압,나유타,Nayuta,c223,나
 2,철갑,민트,Mint,c600,민
 2,철갑,에이드 : 에이전트 바니,Ade: Agent Bunny,c315,바이드
 2,풍압,벨벳,Velvet,c316,벨
 2,작열,브리드 : 사일런트 트랙,Brid: Silent Track,c073,클리드
-2,수냉,마스트 : 로망틱 메이드,Mast: Romantic Maid,c354,망
+2,수냉,마스트 : 로망틱 메이드,Mast: Romantic Maid,c354,망|메스트|마
 2,철갑,헬름 : 아쿠아마린,Helm: Aquamarine,c353,수헬
-2,전격,마리,Mari,c832,마
-2,전격,나가,Naga,c450,나
+2,전격,마리,Mari,c832,마리
+2,전격,나가,Naga,c450,나가
 2,전격,아르카나,Arcana,c581,아르
 2,철갑,타키나,Takina,c861,타
-2,작열,그레이브,Grave,c514,그
+2,작열,그레이브,Grave,c514,그레
 2,풍압,모리,Mori,c590,모리
 2,수냉,델타 : 닌자 시프,Delta: Ninja Thief,c023,닌
 2,철갑,차임,Chime,c331,차
-2,수냉,앵커 : 이노센트 메이드,Anchor: Innocent Maid,c355,앵
+2,수냉,앵커 : 이노센트 메이드,Anchor: Innocent Maid,c355,앵|멩
 2,전격,클레이,Clay,c551,클레
 2,작열,은화 : 택티컬 업,Eunhwa: Tactical Upgrade,c095,택은
 2,풍압,블랑,Blanc,c270,블
@@ -89,7 +89,7 @@
 2,전격,마스트,Mast,c350,마스
 2,수냉,레오나,Leona,c382,레오
 2,철갑,루피,Rupee,c200,루피
-2,풍압,디젤,Diesel,c072,디젤
+2,풍압,디젤,Diesel,c072,풍디젤
 2,풍압,도라,Dolla,c202,도라
 2,수냉,아리아,Aria,c432,아리
 2,풍압,에이드,Ade,c310,에이
@@ -127,14 +127,14 @@
 3,풍압,리버렐리오,Liberalio,c262,리버
 3,작열,미하라 : 본딩 체인,Mihara: Bonding Chain,c162,미
 3,수냉,일레그 : 붐 앤 쇼크,Elegg: Boom and Shock,c502,수레
-3,작열,디젤 : 윈터 스위츠,Diesel: Winter Sweets,c075,클디
+3,작열,디젤 : 윈터 스위츠,Diesel: Winter Sweets,c075,디|클디
 3,수냉,헬름,Helm,c352,헬
 3,수냉,프리바티,Privaty,c170,프
-3,철갑,레이븐,Raven,c851,레2
+3,철갑,레이븐,Raven,c851,레
 3,수냉,도로시 : 세렌디피티,Dorothy: Serendipity,c234,수로
 3,전격,에이다,Ada,c840,에이다
 3,수냉,루드밀라 : 윈터 오너,Ludmilla: Winter Owner,c194,클루
-3,작열,레이,Rei Ayanami,c831,레이
+3,작열,레이,Rei Ayanami,c831,작레
 3,철갑,이브,EVE,c850,이
 3,전격,아인,Ein,c391,아인
 3,전격,이사벨,Isabel,c231,이사
@@ -165,7 +165,7 @@
 3,수냉,에밀리아,Emilia,c821,에밀
 3,전격,프리바티 : 언카인드 메이드,Privaty: Unkind Maid,c313,메프
 3,작열,2B,2B,c810,투비
-3,철갑,솔린,Soline,c071,솔
+3,철갑,솔린,Soline,c071,솔린
 3,작열,율하,Yulha,c171,율
 3,철갑,스노우 화이트 : 이노센트 데이즈,Snow White: Innocent Days,c224,농설
 3,작열,A2,A2,c811,에투
@@ -190,8 +190,12 @@
 3,작열,파워,Power,c801,파워
 3,작열,프로덕트 12,Product 12,c303,프로덕트 12
 3,철갑,iDoll 썬,iDoll Sun,c308,iDoll 썬
-A,철갑,레드 후드,Red Hood,c470,레
+A,철갑,레드 후드,Red Hood,c470,레후
 3,철갑,신데렐라 : 크리스탈 웨이브,Cinderella: Crystal Wave,c515,수렐
 3,철갑,마르차나 : 마린 스터디,Marciana: Marine Study,c322,수말
 3,풍압,라플라스 : 얼티밋 히어로,Laplace: Ultimate Hero,c103,각라
 2,풍압,맥스웰 : 오디너리 미케닉,Maxwell: Ordinary Mechanic,c105,각맥
+3,풍압,드레이크 : 그레이트 빌런,,c104,
+3,작열,퀸(마코토),,c870,퀸
+3,작열,유키코,,c871,유
+2,철갑,아이기스,,c872,아이기스
