@@ -706,5 +706,67 @@
       "img": "Enemy_Material_H_%28D.M.T.R.%29.webp",
       "elementId": "400001"
     }
+  ],
+  "44": [
+    {
+      "step": 1,
+      "name": "레이턴스",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "철갑",
+      "img": "Enemy_Laitance.webp",
+      "elementId": "400001"
+    },
+    {
+      "step": 2,
+      "name": "툼스톤",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "수냉",
+      "img": "Enemy_Tombstone.webp",
+      "elementId": "100001"
+    },
+    {
+      "step": 3,
+      "name": "모더니아",
+      "hp": [
+        150841813600,
+        377104534000,
+        726335435500
+      ],
+      "weak": "작열",
+      "img": "Enemy_Modernia_%28A.N.M.I.%29.webp",
+      "elementId": "300001"
+    },
+    {
+      "step": 4,
+      "name": "리빌드 빅 토르소",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "전격",
+      "img": "Enemy_Rebuild_Stout.webp",
+      "elementId": "200001"
+    },
+    {
+      "step": 5,
+      "name": "애니힐리오",
+      "hp": [
+        150841813600,
+        377104534000,
+        726335435500
+      ],
+      "weak": "풍압",
+      "img": "Enemy_Annihilio.webp",
+      "elementId": "500001"
+    }
   ]
 }
