@@ -784,6 +784,18 @@
     },
     {
       "step": 2,
+      "name": "핑거즈",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "철갑",
+      "img": "Enemy_Fingers.webp",
+      "elementId": "400001"
+    },
+    {
+      "step": 3,
       "name": "크리스탈 체임버",
       "hp": [
         150841813600,
@@ -795,7 +807,7 @@
       "elementId": "200001"
     },
     {
-      "step": 3,
+      "step": 4,
       "name": "리빌드 벌컨R",
       "hp": [
         99856279200,
@@ -807,7 +819,7 @@
       "elementId": "300001"
     },
     {
-      "step": 4,
+      "step": 5,
       "name": "크라켄",
       "hp": [
         150841813600,
@@ -817,18 +829,68 @@
       "weak": "풍압",
       "img": "Enemy_Kraken_%28D.M.T.R.%29.webp",
       "elementId": "500001"
-    },
+    }
+  ],
+  "46": [
     {
-      "step": 5,
-      "name": "핑거즈",
+      "step": 1,
+      "name": "오벨리스크",
       "hp": [
         99856279200,
         249640698000,
         542085993750
       ],
       "weak": "철갑",
-      "img": "Enemy_Fingers.webp",
+      "img": "Enemy_Obelisk.webp",
       "elementId": "400001"
+    },
+    {
+      "step": 2,
+      "name": "크리스탈 아머",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "전격",
+      "img": "Enemy_Crystal_Armor.webp",
+      "elementId": "200001"
+    },
+    {
+      "step": 3,
+      "name": "알트아이젠",
+      "hp": [
+        150841813600,
+        377104534000,
+        726335435500
+      ],
+      "weak": "작열",
+      "img": "Enemy_Alteisen_MK.VI.webp",
+      "elementId": "300001"
+    },
+    {
+      "step": 4,
+      "name": "리빌드 빅 암즈",
+      "hp": [
+        99856279200,
+        249640698000,
+        542085993750
+      ],
+      "weak": "풍압",
+      "img": "Enemy_Rebuild_Armstrong.webp",
+      "elementId": "500001"
+    },
+    {
+      "step": 5,
+      "name": "블랙스미스",
+      "hp": [
+        150841813600,
+        377104534000,
+        726335435500
+      ],
+      "weak": "수냉",
+      "img": "Enemy_Black_Smith.webp",
+      "elementId": "100001"
     }
   ]
 }
